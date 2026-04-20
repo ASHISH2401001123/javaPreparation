@@ -1,0 +1,9 @@
+try {
+    // JDBC code
+} catch (SQLException e) {
+    System.out.println("SQL Error: " + e.getMessage());
+    System.out.println("Error Code: " + e.getErrorCode());
+    System.out.println("SQL State: " + e.getSQLState());
+} catch (ClassNotFoundException e) {
+    System.out.println("Driver not found!");
+}
