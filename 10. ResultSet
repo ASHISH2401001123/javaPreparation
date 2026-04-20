@@ -1,0 +1,8 @@
+ResultSet rs = stmt.executeQuery("SELECT id, name, marks FROM students");
+
+while (rs.next()) {              // Next row pe jao
+    int id    = rs.getInt("id");
+    String nm = rs.getString("name");
+    float mk  = rs.getFloat("marks");
+    System.out.println(id + " " + nm + " " + mk);
+}
