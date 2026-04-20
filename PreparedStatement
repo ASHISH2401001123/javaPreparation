@@ -1,0 +1,7 @@
+PreparedStatement ps = con.prepareStatement(
+    "INSERT INTO students VALUES (?, ?, ?)"
+);
+ps.setInt(1, 101);          // 1st ? = 101
+ps.setString(2, "Rahul");   // 2nd ? = Rahul
+ps.setFloat(3, 85.5f);      // 3rd ? = 85.5
+ps.executeUpdate();
